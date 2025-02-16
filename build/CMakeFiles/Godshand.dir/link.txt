@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Godshand.dir/main.cpp.o CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o -o Godshand 

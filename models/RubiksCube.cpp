@@ -1,22 +1,22 @@
 #include "RubiksCube.h"
 
-  // to print the state of the cube
-  //        U U U
-  //        U U U
-  //        U U U
-  // L L L  F F F  R R R  B B B
-  // L L L  F F F  R R R  B B B
-  // L L L  F F F  R R R  B B B
-  //        D D D
-  //        D D D
-  //        D D D
+// to print the state of the cube
+//        U U U
+//        U U U
+//        U U U
+// L L L  F F F  R R R  B B B
+// L L L  F F F  R R R  B B B
+// L L L  F F F  R R R  B B B
+//        D D D
+//        D D D
+//        D D D
 
 void RubiksCube::printstate() const {
     std::cout << "printing Rubikscube state : \n\n"; 
 
     for(int row=0; row <= 2; ++row) {
         for(int col=0; col < 7; ++col) 
-           std::cout << ' ';
+        std::cout << ' ';
 
         for(int col=0; col <= 2; ++col) {
             std::cout << getColorLetter(getColor(RubiksCube::FACE::UP, row, col)) << ' ';
@@ -25,7 +25,7 @@ void RubiksCube::printstate() const {
         std::cout << '\n';
     }
 
-    for(int row=0; row <= 3; ++row) {
+    for(int row=0; row <= 2; ++row) {
         for(int col=0; col <= 2; ++col) {
             std::cout << getColorLetter(getColor(RubiksCube::FACE::LEFT, row, col)) << ' ';
         }
@@ -46,9 +46,9 @@ void RubiksCube::printstate() const {
         for(int col=0; col <= 2; ++col) {
             std::cout << getColorLetter(getColor(RubiksCube::FACE::BACK, row, col)) << ' ';
         }
-    }
 
-    std::cout << '\n';
+        std::cout << '\n';
+    }
 
     for(int row=0; row <= 2; ++row) {
         for(int col = 0; col < 7; ++col) {
@@ -58,6 +58,8 @@ void RubiksCube::printstate() const {
         for(int col = 0; col <= 2; ++col) {
             std::cout << getColorLetter(getColor(RubiksCube::FACE::DOWN, row, col)) << ' ';
         }
+
+        std::cout << '\n';
     }
 
     std::cout << '\n';
@@ -66,25 +68,25 @@ void RubiksCube::printstate() const {
 char RubiksCube::getColorLetter(COLOR color) {
     switch (color) {
     case COLOR::BLUE:
-      return 'B';
+    return 'B';
     case COLOR::WHITE:
-      return 'W';
+    return 'W';
     case COLOR::RED:
-      return 'R';
+    return 'R';
     case COLOR::GREEN:
-      return 'G';
+    return 'G';
     case COLOR::YELLOW:
-      return 'Y';
+    return 'Y';
     case COLOR::ORANGE:
-      return 'O';
+    return 'O';
     }
     __builtin_unreachable();
-  }
+}
 
-  std::string RubiksCube::getMoveNotation(MOVE move) {
-       switch(move) {
-           case MOVE::L :
-               return "L";
+std::string RubiksCube::getMoveNotation(MOVE move) {
+    switch(move) {
+        case MOVE::L :
+            return "L";
 
             case MOVE::L2 :
                 return "L2";
@@ -136,124 +138,126 @@ char RubiksCube::getColorLetter(COLOR color) {
 
             case MOVE::DPRIME :
                 return "D'";
-       }
-       __builtin_unreachable();
+    }
+    __builtin_unreachable();
 }
 
- RubiksCube& RubiksCube::performMove(MOVE move) {
+RubiksCube& RubiksCube::performMove(MOVE move) {
         switch(move) {
             case MOVE::L : 
-             return this->l();
+            return this->l();
 
             case MOVE::L2 :
-             return this->l2();
+            return this->l2();
 
             case MOVE::LPRIME :
-             return this->lPrime();
+            return this->lPrime();
 
             case MOVE::R :
-             return this->r();
+            return this->r();
 
             case MOVE::R2 :
-             return this->r2();
+            return this->r2();
 
             case MOVE::RPRIME :
-             return this->rPrime();
+            return this->rPrime();
 
             case MOVE::U :
-             return this->u();
+            return this->u();
 
             case MOVE::U2 :
-             return this->u2();
+            return this->u2();
 
             case MOVE::UPRIME :
-             return this->uPrime();
+            return this->uPrime();
 
             case MOVE::B :
-             return this->b();
+            return this->b();
 
             case MOVE::B2 :
-             return this->b2();
+            return this->b2();
 
             case MOVE::BPRIME :
-             return this->bPrime();
+            return this->bPrime();
 
             case MOVE::F :
-             return this->f();
+            return this->f();
 
             case MOVE::F2 :
-             return this->f2();
+            return this->f2();
 
             case MOVE::FPRIME :
-             return this->fPrime();
+            return this->fPrime();
 
             case MOVE::D : 
-             return this->d();
+            return this->d();
 
             case MOVE::D2 :
-             return this->d2();
+            return this->d2();
 
             case MOVE::DPRIME :
-             return this->dPrime();
+            return this->dPrime();
         }
+        __builtin_unreachable();
 }
 
 RubiksCube& RubiksCube::invertMove(MOVE move) {
-     switch(move) {
+    switch(move) {
             case MOVE::L : 
-             return this->lPrime();
+            return this->lPrime();
 
             case MOVE::L2 :
-             return this->l2();
+            return this->l2();
 
             case MOVE::LPRIME :
-             return this->l();
+            return this->l();
 
             case MOVE::R :
-             return this->rPrime();
+            return this->rPrime();
 
             case MOVE::R2 :
-             return this->r2();
+            return this->r2();
 
             case MOVE::RPRIME :
-             return this->r();
+            return this->r();
 
             case MOVE::U :
-             return this->uPrime();
+            return this->uPrime();
 
             case MOVE::U2 :
-             return this->u2();
+            return this->u2();
 
             case MOVE::UPRIME :
-             return this->u();
+            return this->u();
 
             case MOVE::B :
-             return this->bPrime();
+            return this->bPrime();
 
             case MOVE::B2 :
-             return this->b2();
+            return this->b2();
 
             case MOVE::BPRIME :
-             return this->b();
+            return this->b();
 
             case MOVE::F :
-             return this->fPrime();
+            return this->fPrime();
 
             case MOVE::F2 :
-             return this->f2();
+            return this->f2();
 
             case MOVE::FPRIME :
-             return this->f();
+            return this->f();
 
             case MOVE::D : 
-             return this->dPrime();
+            return this->dPrime();
 
             case MOVE::D2 :
-             return this->d2();
+            return this->d2();
 
             case MOVE::DPRIME :
-             return this->d();
+            return this->d();
         }
+        __builtin_unreachable();
 }
 
 

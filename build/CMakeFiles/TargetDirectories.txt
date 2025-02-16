@@ -1,0 +1,3 @@
+/mnt/f/godsHand/build/CMakeFiles/Godshand.dir
+/mnt/f/godsHand/build/CMakeFiles/edit_cache.dir
+/mnt/f/godsHand/build/CMakeFiles/rebuild_cache.dir
