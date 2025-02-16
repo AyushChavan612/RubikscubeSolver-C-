@@ -1,4 +1,5 @@
 #ifndef RUBIKS_CUBE_SOLVER_GENERIC_CUBE
+
 #define RUBIKS_CUBE_SOLVER_GENERIC_CUBE
 #include<bits/stdc++.h>
 
@@ -43,11 +44,11 @@ class RubiksCube {
 
     static char getColorLetter(COLOR color);
 
-    void printstate();
+    void printstate() const;
 
-    virtual COLOR getColor(FACE face , int row , int col)=0;
+    virtual COLOR getColor(FACE face , int row , int col) const = 0;
 
-    virtual bool isSolved() = 0;
+    virtual bool isSolved() const = 0;
 
     static std::string getMoveNotation(MOVE move);
 

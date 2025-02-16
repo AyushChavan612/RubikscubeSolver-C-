@@ -45,7 +45,7 @@ class Rubikscube3Darray : public RubiksCube {
         }
     }
 
-    COLOR getColor(FACE face , int row , int col) override{
+    COLOR getColor(FACE face , int row , int col) const  override{
         char color = cube[(int)face][row][col];
         switch (color)
         {
@@ -71,7 +71,7 @@ class Rubikscube3Darray : public RubiksCube {
         __builtin_unreachable();
     }
 
-    bool isSolved() override {
+     bool isSolved() const override  {
         for(int i = 0; i < 6; i++) {
             for(int j = 0; j < 3; j++) {
                 for(int k = 0; k < 3; k++) {
