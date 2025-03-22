@@ -1,20 +1,25 @@
 #include "models/3DArrayModel.cpp"
+#include "solver/BFSSolver.h"
+#include "solver/DFSSolver.h"
+#include "solver/IDDFSSolver.h"
 using namespace std;
 
-int main()
-{
-  Rubikscube3Darray cube1, cube2, cube3, cube4, cube5, cube6;
-  cube1.d2();
-  cube1.printstate();
-  cube1.b2();
-  cube1.printstate();
-  cube1.l2();
-  cube1.printstate();
-  cube1.d();
-  cube1.printstate();
-  cube1.r();
-  cube1.printstate();
-  cube1.bPrime();
-  cube1.printstate();
+int main() {
+  
+  RubiksCube3dArray cube;
+
+  cube.randomShuffleCube(3);
+  cube.print();
+
+  IDDFSSolver<RubiksCube3dArray, Hash3d> IDDFSSolver(cube , 5);
+  vector<RubiksCube::MOVE> moves = IDDFSSolver.IDDFS();
+  for(auto & Move : moves) {
+    cout << RubiksCube::getMove(Move) << " ";
+  }
+
+  IDDFSSolver.rubiksCube.print();
+
+
+
   return 0;
 }

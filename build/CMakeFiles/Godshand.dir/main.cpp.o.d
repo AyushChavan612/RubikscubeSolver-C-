@@ -329,4 +329,8 @@ CMakeFiles/Godshand.dir/main.cpp.o: /mnt/f/godsHand/main.cpp \
  /usr/include/c++/13/shared_mutex /usr/include/c++/13/charconv \
  /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
  /usr/include/c++/13/bits/fs_path.h /usr/include/c++/13/bits/fs_dir.h \
- /usr/include/c++/13/bits/fs_ops.h /usr/include/c++/13/memory_resource
+ /usr/include/c++/13/bits/fs_ops.h /usr/include/c++/13/memory_resource \
+ /mnt/f/godsHand/solver/BFSSolver.h \
+ /mnt/f/godsHand/solver/../models/RubiksCube.h \
+ /mnt/f/godsHand/solver/DFSSolver.h /mnt/f/godsHand/solver/IDDFSSolver.h \
+ /mnt/f/godsHand/solver/DFSSolver.h

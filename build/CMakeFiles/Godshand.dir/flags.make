@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/f/godsHand/models
+CXX_INCLUDES = -I/mnt/f/godsHand/models -I/mnt/f/godsHand/solver
 
 CXX_FLAGS = -std=gnu++17
 
