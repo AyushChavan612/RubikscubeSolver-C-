@@ -4,7 +4,6 @@
 #ifndef RUBIKS_CUBE_SOLVER_BFSSOLVER_H
 #define RUBIKS_CUBE_SOLVER_BFSSOLVER_H
 
-
 template<typename T, typename H>
 class BFSSolver {
 private:

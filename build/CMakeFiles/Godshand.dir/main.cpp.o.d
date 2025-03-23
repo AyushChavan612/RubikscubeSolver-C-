@@ -333,4 +333,5 @@ CMakeFiles/Godshand.dir/main.cpp.o: /mnt/f/godsHand/main.cpp \
  /mnt/f/godsHand/solver/BFSSolver.h \
  /mnt/f/godsHand/solver/../models/RubiksCube.h \
  /mnt/f/godsHand/solver/DFSSolver.h /mnt/f/godsHand/solver/IDDFSSolver.h \
- /mnt/f/godsHand/solver/DFSSolver.h
+ /mnt/f/godsHand/solver/DFSSolver.h \
+ /mnt/f/godsHand/models/1DArrayModel.cpp

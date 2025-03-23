@@ -47,14 +47,14 @@ public:
     }
 
     bool isSolved() const override {
-       for (int face = 0; face < 6; face++) {
+    for (int face = 0; face < 6; face++) {
       for (int row = 0; row < 3; row++) {
         for (int col = 0; col < 3; col++) {
           if (this->cube[int(face)][row][col] != getColorLetter(COLOR(face)))
             return false;
-        }
-      }
-    }
+         }
+       }
+     }
     return true;
     }
 
