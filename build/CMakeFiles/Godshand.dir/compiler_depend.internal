@@ -6,6 +6,7 @@ CMakeFiles/Godshand.dir/main.cpp.o
  /mnt/f/godsHand/models/1DArrayModel.cpp
  /mnt/f/godsHand/models/3DArrayModel.cpp
  /mnt/f/godsHand/models/RubiksCube.h
+ /mnt/f/godsHand/models/RubiksCubeBitBoard.cpp
  /mnt/f/godsHand/models/RubiksCube.h
  /mnt/f/godsHand/solver/BFSSolver.h
  /mnt/f/godsHand/solver/DFSSolver.h

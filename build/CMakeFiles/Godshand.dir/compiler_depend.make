@@ -5,6 +5,7 @@ CMakeFiles/Godshand.dir/main.cpp.o: /mnt/f/godsHand/main.cpp \
   /mnt/f/godsHand/models/1DArrayModel.cpp \
   /mnt/f/godsHand/models/3DArrayModel.cpp \
   /mnt/f/godsHand/models/RubiksCube.h \
+  /mnt/f/godsHand/models/RubiksCubeBitBoard.cpp \
   /mnt/f/godsHand/models/RubiksCube.h \
   /mnt/f/godsHand/solver/BFSSolver.h \
   /mnt/f/godsHand/solver/DFSSolver.h \
@@ -1324,8 +1325,6 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
@@ -1498,8 +1497,6 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 
 /usr/include/c++/13/type_traits:
 
-/usr/include/c++/13/bits/stl_numeric.h:
-
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -1542,16 +1539,6 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 
 /usr/include/c++/13/bits/locale_facets.tcc:
 
-/usr/include/c++/13/cstdlib:
-
-/usr/include/c++/13/bits/regex_scanner.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/usr/include/c++/13/bits/stl_map.h:
-
-/usr/include/c++/13/locale:
-
 /usr/include/c++/13/bits/regex_executor.tcc:
 
 /usr/include/c++/13/bits/postypes.h:
@@ -1583,10 +1570,6 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 /usr/include/c++/13/bits/regex_compiler.h:
 
 /usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/c++/13/bits/stl_uninitialized.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
 
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
@@ -1656,9 +1639,25 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 
 /usr/include/c++/13/bits/invoke.h:
 
-/usr/include/c++/13/ctgmath:
+/usr/include/c++/13/cstdlib:
 
-/usr/include/c++/13/atomic:
+/usr/include/c++/13/bits/regex_scanner.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/c++/13/bits/stl_map.h:
+
+/usr/include/c++/13/bits/new_allocator.h:
+
+/usr/include/c++/13/bits/stl_uninitialized.h:
+
+/usr/include/c++/13/locale:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/mnt/f/godsHand/models/RubiksCubeBitBoard.cpp:
+
+/usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
@@ -1669,6 +1668,16 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 /usr/include/c++/13/bits/exception_ptr.h:
 
 /usr/include/c++/13/bits/regex.h:
+
+/usr/include/c++/13/tuple:
+
+/usr/include/c++/13/bits/regex_executor.h:
+
+/usr/include/c++/13/cfloat:
+
+/usr/include/c++/13/bits/list.tcc:
+
+/usr/include/c++/13/bits/nested_exception.h:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
@@ -1738,6 +1747,10 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 
 /usr/include/c++/13/bits/stream_iterator.h:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/c++/13/any:
+
 /usr/include/c++/13/bits/atomic_futex.h:
 
 /usr/include/c++/13/cstdalign:
@@ -1751,6 +1764,14 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 /usr/include/c++/13/bits/regex_automaton.tcc:
 
 /usr/include/c++/13/algorithm:
+
+/usr/include/c++/13/array:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/hash_bytes.h:
 
 /usr/include/c++/13/bits/istream.tcc:
 
@@ -1776,18 +1797,6 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 
 /mnt/f/godsHand/solver/IDDFSSolver.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/c++/13/any:
-
-/usr/include/c++/13/array:
-
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/asm-generic/errno-base.h:
-
 /usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -1795,6 +1804,10 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 /mnt/f/godsHand/models/RubiksCube.h:
 
 /usr/include/assert.h:
+
+/usr/include/c++/13/ctgmath:
+
+/usr/include/c++/13/atomic:
 
 /usr/include/alloca.h:
 
@@ -1876,6 +1889,8 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 
 /usr/include/c++/13/cuchar:
 
+/usr/include/c++/13/bits/stl_numeric.h:
+
 /usr/include/c++/13/bits/stl_queue.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
@@ -1911,8 +1926,6 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 /usr/include/c++/13/bits/codecvt.h:
 
 /usr/include/c++/13/bits/stl_tree.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
 
 /usr/include/c++/13/bits/specfun.h:
 
@@ -2137,13 +2150,3 @@ CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o: /mnt/f/godsHand/models/RubiksCu
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /usr/include/c++/13/tr1/special_function_util.h:
-
-/usr/include/c++/13/bits/regex_executor.h:
-
-/usr/include/c++/13/cfloat:
-
-/usr/include/c++/13/bits/list.tcc:
-
-/usr/include/c++/13/bits/nested_exception.h:
-
-/usr/include/c++/13/tuple:

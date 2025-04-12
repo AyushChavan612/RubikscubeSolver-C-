@@ -3,22 +3,56 @@
 #include "solver/DFSSolver.h"
 #include "solver/IDDFSSolver.h"
 #include "models/1DArrayModel.cpp"
+#include "models/RubiksCubeBitBoard.cpp"
+
 using namespace std;
 
 int main() {
-  
-  RubiksCube1DArray cube;
+   
+  // Testing all models and all solvers except IDA star
+  RubiksCubeBitboard bit;
+  RubiksCube1DArray one_d;
+  RubiksCube3dArray three_d;
 
-  cube.randomShuffleCube(7);
-  cube.print();
+  bit.randomShuffleCube(4);
+  one_d.randomShuffleCube(4);
+  three_d.randomShuffleCube(4);
 
-  IDDFSSolver<RubiksCube1DArray, Hash1d> IDDFSSolver(cube , 5);
-  vector<RubiksCube::MOVE> moves = IDDFSSolver.IDDFS();
+  cout << "Printing bitBoard Cube and solving usng bfs : " << endl;
+  bit.print();
+
+  BFSSolver<RubiksCubeBitboard, HashBitboard> BFS(bit);
+  vector<RubiksCube::MOVE> moves = BFS.solve();
   for(auto & Move : moves) {
     cout << RubiksCube::getMove(Move) << " ";
-  }
+  }  
+  cout << endl;
+  BFS.rubiksCube.print();
 
-  IDDFSSolver.rubiksCube.print();
+  
+  cout << "Printing 1DarrayModel Cube and solving usng DFS : " << endl;
+  one_d.print();
 
-  return 0;
+  DFSSolver<RubiksCube1DArray, Hash1d> DFS(one_d);
+  moves = DFS.solve();
+  for(auto & Move : moves) {
+    cout << RubiksCube::getMove(Move) << " ";
+  }  
+  cout << endl;
+  DFS.rubiksCube.print();
+
+  
+  cout << "Printing 3DarrayModel and solving using IDDFS : " << endl;
+  three_d.print();
+
+  IDDFSSolver<RubiksCube3dArray, Hash3d> IDDFS(three_d);
+  moves = IDDFS.IDDFS();
+  for(auto & Move : moves) {
+    cout << RubiksCube::getMove(Move) << " ";
+  }  
+  cout << endl;
+  IDDFS.rubiksCube.print();
+
+  
+   return 0;
 }
