@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/f/godsHand
+# Install script for directory: /mnt/f/godshand
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/f/godsHand/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/f/godshand/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

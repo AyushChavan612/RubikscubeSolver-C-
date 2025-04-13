@@ -1,6 +1,6 @@
-CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
- /mnt/f/godsHand/models/3DArrayModel.cpp /usr/include/stdc-predef.h \
- /mnt/f/godsHand/models/RubiksCube.h \
+CMakeFiles/rubiks_cube_solver.dir/models/RubiksCube.cpp.o: \
+ /mnt/f/godshand/models/RubiksCube.cpp /usr/include/stdc-predef.h \
+ /mnt/f/godshand/models/RubiksCube.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/stdc++.h \
  /usr/include/c++/13/cassert \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -13,8 +13,7 @@ CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
- /usr/include/c++/13/pstl/pstl_config.h /usr/include/assert.h \
- /usr/include/c++/13/cctype /usr/include/ctype.h \
+ /usr/include/assert.h /usr/include/c++/13/cctype /usr/include/ctype.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -94,9 +93,7 @@ CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h /usr/include/c++/13/new \
  /usr/include/c++/13/bits/exception.h \
- /usr/include/c++/13/bits/stl_construct.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/bitset \
+ /usr/include/c++/13/bits/stl_construct.h /usr/include/c++/13/bitset \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h \
@@ -122,10 +119,7 @@ CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
  /usr/include/c++/13/bits/range_access.h \
  /usr/include/c++/13/bits/basic_string.h \
  /usr/include/c++/13/ext/alloc_traits.h \
- /usr/include/c++/13/bits/alloc_traits.h /usr/include/c++/13/string_view \
- /usr/include/c++/13/bits/functional_hash.h \
- /usr/include/c++/13/bits/hash_bytes.h \
- /usr/include/c++/13/bits/string_view.tcc \
+ /usr/include/c++/13/bits/alloc_traits.h \
  /usr/include/c++/13/ext/string_conversions.h /usr/include/c++/13/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
@@ -138,25 +132,12 @@ CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
- /usr/include/c++/13/bits/basic_string.tcc \
- /usr/include/c++/13/bits/memory_resource.h \
- /usr/include/c++/13/bits/uses_allocator.h \
- /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/typeinfo /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/array \
- /usr/include/c++/13/compare /usr/include/c++/13/iterator \
- /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/include/c++/13/bits/functional_hash.h \
+ /usr/include/c++/13/bits/hash_bytes.h \
+ /usr/include/c++/13/bits/basic_string.tcc /usr/include/c++/13/functional \
+ /usr/include/c++/13/tuple /usr/include/c++/13/bits/uses_allocator.h \
+ /usr/include/c++/13/bits/std_function.h /usr/include/c++/13/typeinfo \
+ /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
  /usr/include/c++/13/bits/streambuf_iterator.h \
  /usr/include/c++/13/streambuf /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/ext/atomicity.h \
@@ -181,25 +162,23 @@ CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/include/c++/13/bits/nested_exception.h \
  /usr/include/c++/13/bits/streambuf.tcc /usr/include/c++/13/limits \
- /usr/include/c++/13/memory \
+ /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
  /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/ext/concurrence.h \
  /usr/include/c++/13/bits/shared_ptr_atomic.h \
  /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13/backward/auto_ptr.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h /usr/include/c++/13/numeric \
- /usr/include/c++/13/bits/stl_numeric.h \
- /usr/include/c++/13/pstl/glue_numeric_defs.h /usr/include/c++/13/utility \
- /usr/include/c++/13/bits/stl_relops.h /usr/include/c++/13/atomic \
+ /usr/include/c++/13/backward/auto_ptr.h /usr/include/c++/13/numeric \
+ /usr/include/c++/13/bits/stl_numeric.h /usr/include/c++/13/utility \
+ /usr/include/c++/13/bits/stl_relops.h /usr/include/c++/13/array \
+ /usr/include/c++/13/compare /usr/include/c++/13/atomic \
  /usr/include/c++/13/ratio /usr/include/c++/13/scoped_allocator \
- /usr/include/c++/13/typeindex /usr/include/c++/13/any \
- /usr/include/c++/13/optional /usr/include/c++/13/variant \
- /usr/include/c++/13/bits/parse_numbers.h /usr/include/c++/13/cmath \
+ /usr/include/c++/13/typeindex /usr/include/c++/13/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -209,19 +188,7 @@ CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/13/bits/specfun.h /usr/include/c++/13/tr1/gamma.tcc \
- /usr/include/c++/13/tr1/special_function_util.h \
- /usr/include/c++/13/tr1/bessel_function.tcc \
- /usr/include/c++/13/tr1/beta_function.tcc \
- /usr/include/c++/13/tr1/ell_integral.tcc \
- /usr/include/c++/13/tr1/exp_integral.tcc \
- /usr/include/c++/13/tr1/hypergeometric.tcc \
- /usr/include/c++/13/tr1/legendre_function.tcc \
- /usr/include/c++/13/tr1/modified_bessel_func.tcc \
- /usr/include/c++/13/tr1/poly_hermite.tcc \
- /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/csignal \
- /usr/include/signal.h \
+ /usr/include/c++/13/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
@@ -287,9 +254,12 @@ CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
  /usr/include/c++/13/list /usr/include/c++/13/bits/stl_list.h \
  /usr/include/c++/13/bits/list.tcc /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h /usr/include/c++/13/queue \
- /usr/include/c++/13/bits/stl_queue.h /usr/include/c++/13/set \
- /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/queue \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/bits/stl_queue.h \
+ /usr/include/c++/13/set /usr/include/c++/13/bits/stl_set.h \
  /usr/include/c++/13/bits/stl_multiset.h /usr/include/c++/13/stack \
  /usr/include/c++/13/bits/stl_stack.h /usr/include/c++/13/valarray \
  /usr/include/c++/13/bits/valarray_array.h \
@@ -301,7 +271,8 @@ CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
  /usr/include/c++/13/bits/gslice_array.h \
  /usr/include/c++/13/bits/mask_array.h \
  /usr/include/c++/13/bits/indirect_array.h /usr/include/c++/13/chrono \
- /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/codecvt \
+ /usr/include/c++/13/bits/chrono.h \
+ /usr/include/c++/13/bits/parse_numbers.h /usr/include/c++/13/codecvt \
  /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h /usr/include/c++/13/forward_list \
@@ -324,9 +295,11 @@ CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o: \
  /usr/include/c++/13/bits/regex_executor.h \
  /usr/include/c++/13/bits/regex_executor.tcc /usr/include/c++/13/thread \
  /usr/include/c++/13/bits/this_thread_sleep.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
  /usr/include/c++/13/unordered_set \
  /usr/include/c++/13/bits/unordered_set.h \
- /usr/include/c++/13/shared_mutex /usr/include/c++/13/charconv \
- /usr/include/c++/13/filesystem /usr/include/c++/13/bits/fs_fwd.h \
- /usr/include/c++/13/bits/fs_path.h /usr/include/c++/13/bits/fs_dir.h \
- /usr/include/c++/13/bits/fs_ops.h /usr/include/c++/13/memory_resource
+ /usr/include/c++/13/shared_mutex

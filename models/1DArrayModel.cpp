@@ -314,7 +314,6 @@ class RubiksCube1DArray : public RubiksCube {
     }
 };
 
-
 struct Hash1d {
     size_t operator()(const RubiksCube1DArray &r1) const {
         string str = "";

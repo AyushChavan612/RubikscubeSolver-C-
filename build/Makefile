@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/f/godsHand
+CMAKE_SOURCE_DIR = /mnt/f/godshand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/f/godsHand/build
+CMAKE_BINARY_DIR = /mnt/f/godshand/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/godsHand/build/CMakeFiles /mnt/f/godsHand/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/godshand/build/CMakeFiles /mnt/f/godshand/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/godsHand/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/godshand/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,144 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Godshand
+# Target rules for targets named rubiks_cube_solver
 
 # Build rule for target.
-Godshand: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Godshand
-.PHONY : Godshand
+rubiks_cube_solver: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rubiks_cube_solver
+.PHONY : rubiks_cube_solver
 
 # fast build rule for target.
-Godshand/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/build
-.PHONY : Godshand/fast
+rubiks_cube_solver/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/build
+.PHONY : rubiks_cube_solver/fast
+
+PatternDatabases/CornerDatabaseMaker.o: PatternDatabases/CornerDatabaseMaker.cpp.o
+.PHONY : PatternDatabases/CornerDatabaseMaker.o
+
+# target to build an object file
+PatternDatabases/CornerDatabaseMaker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/CornerDatabaseMaker.cpp.o
+.PHONY : PatternDatabases/CornerDatabaseMaker.cpp.o
+
+PatternDatabases/CornerDatabaseMaker.i: PatternDatabases/CornerDatabaseMaker.cpp.i
+.PHONY : PatternDatabases/CornerDatabaseMaker.i
+
+# target to preprocess a source file
+PatternDatabases/CornerDatabaseMaker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/CornerDatabaseMaker.cpp.i
+.PHONY : PatternDatabases/CornerDatabaseMaker.cpp.i
+
+PatternDatabases/CornerDatabaseMaker.s: PatternDatabases/CornerDatabaseMaker.cpp.s
+.PHONY : PatternDatabases/CornerDatabaseMaker.s
+
+# target to generate assembly for a file
+PatternDatabases/CornerDatabaseMaker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/CornerDatabaseMaker.cpp.s
+.PHONY : PatternDatabases/CornerDatabaseMaker.cpp.s
+
+PatternDatabases/CornerPatternDatabase.o: PatternDatabases/CornerPatternDatabase.cpp.o
+.PHONY : PatternDatabases/CornerPatternDatabase.o
+
+# target to build an object file
+PatternDatabases/CornerPatternDatabase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/CornerPatternDatabase.cpp.o
+.PHONY : PatternDatabases/CornerPatternDatabase.cpp.o
+
+PatternDatabases/CornerPatternDatabase.i: PatternDatabases/CornerPatternDatabase.cpp.i
+.PHONY : PatternDatabases/CornerPatternDatabase.i
+
+# target to preprocess a source file
+PatternDatabases/CornerPatternDatabase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/CornerPatternDatabase.cpp.i
+.PHONY : PatternDatabases/CornerPatternDatabase.cpp.i
+
+PatternDatabases/CornerPatternDatabase.s: PatternDatabases/CornerPatternDatabase.cpp.s
+.PHONY : PatternDatabases/CornerPatternDatabase.s
+
+# target to generate assembly for a file
+PatternDatabases/CornerPatternDatabase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/CornerPatternDatabase.cpp.s
+.PHONY : PatternDatabases/CornerPatternDatabase.cpp.s
+
+PatternDatabases/NibbleArray.o: PatternDatabases/NibbleArray.cpp.o
+.PHONY : PatternDatabases/NibbleArray.o
+
+# target to build an object file
+PatternDatabases/NibbleArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/NibbleArray.cpp.o
+.PHONY : PatternDatabases/NibbleArray.cpp.o
+
+PatternDatabases/NibbleArray.i: PatternDatabases/NibbleArray.cpp.i
+.PHONY : PatternDatabases/NibbleArray.i
+
+# target to preprocess a source file
+PatternDatabases/NibbleArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/NibbleArray.cpp.i
+.PHONY : PatternDatabases/NibbleArray.cpp.i
+
+PatternDatabases/NibbleArray.s: PatternDatabases/NibbleArray.cpp.s
+.PHONY : PatternDatabases/NibbleArray.s
+
+# target to generate assembly for a file
+PatternDatabases/NibbleArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/NibbleArray.cpp.s
+.PHONY : PatternDatabases/NibbleArray.cpp.s
+
+PatternDatabases/PatternDatabase.o: PatternDatabases/PatternDatabase.cpp.o
+.PHONY : PatternDatabases/PatternDatabase.o
+
+# target to build an object file
+PatternDatabases/PatternDatabase.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/PatternDatabase.cpp.o
+.PHONY : PatternDatabases/PatternDatabase.cpp.o
+
+PatternDatabases/PatternDatabase.i: PatternDatabases/PatternDatabase.cpp.i
+.PHONY : PatternDatabases/PatternDatabase.i
+
+# target to preprocess a source file
+PatternDatabases/PatternDatabase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/PatternDatabase.cpp.i
+.PHONY : PatternDatabases/PatternDatabase.cpp.i
+
+PatternDatabases/PatternDatabase.s: PatternDatabases/PatternDatabase.cpp.s
+.PHONY : PatternDatabases/PatternDatabase.s
+
+# target to generate assembly for a file
+PatternDatabases/PatternDatabase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/PatternDatabase.cpp.s
+.PHONY : PatternDatabases/PatternDatabase.cpp.s
+
+PatternDatabases/math.o: PatternDatabases/math.cpp.o
+.PHONY : PatternDatabases/math.o
+
+# target to build an object file
+PatternDatabases/math.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/math.cpp.o
+.PHONY : PatternDatabases/math.cpp.o
+
+PatternDatabases/math.i: PatternDatabases/math.cpp.i
+.PHONY : PatternDatabases/math.i
+
+# target to preprocess a source file
+PatternDatabases/math.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/math.cpp.i
+.PHONY : PatternDatabases/math.cpp.i
+
+PatternDatabases/math.s: PatternDatabases/math.cpp.s
+.PHONY : PatternDatabases/math.s
+
+# target to generate assembly for a file
+PatternDatabases/math.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/PatternDatabases/math.cpp.s
+.PHONY : PatternDatabases/math.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +262,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,15 +270,39 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+models/1DArrayModel.o: models/1DArrayModel.cpp.o
+.PHONY : models/1DArrayModel.o
+
+# target to build an object file
+models/1DArrayModel.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/1DArrayModel.cpp.o
+.PHONY : models/1DArrayModel.cpp.o
+
+models/1DArrayModel.i: models/1DArrayModel.cpp.i
+.PHONY : models/1DArrayModel.i
+
+# target to preprocess a source file
+models/1DArrayModel.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/1DArrayModel.cpp.i
+.PHONY : models/1DArrayModel.cpp.i
+
+models/1DArrayModel.s: models/1DArrayModel.cpp.s
+.PHONY : models/1DArrayModel.s
+
+# target to generate assembly for a file
+models/1DArrayModel.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/1DArrayModel.cpp.s
+.PHONY : models/1DArrayModel.cpp.s
 
 models/3DArrayModel.o: models/3DArrayModel.cpp.o
 .PHONY : models/3DArrayModel.o
 
 # target to build an object file
 models/3DArrayModel.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/3DArrayModel.cpp.o
 .PHONY : models/3DArrayModel.cpp.o
 
 models/3DArrayModel.i: models/3DArrayModel.cpp.i
@@ -166,7 +310,7 @@ models/3DArrayModel.i: models/3DArrayModel.cpp.i
 
 # target to preprocess a source file
 models/3DArrayModel.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/3DArrayModel.cpp.i
 .PHONY : models/3DArrayModel.cpp.i
 
 models/3DArrayModel.s: models/3DArrayModel.cpp.s
@@ -174,7 +318,7 @@ models/3DArrayModel.s: models/3DArrayModel.cpp.s
 
 # target to generate assembly for a file
 models/3DArrayModel.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/models/3DArrayModel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/3DArrayModel.cpp.s
 .PHONY : models/3DArrayModel.cpp.s
 
 models/RubiksCube.o: models/RubiksCube.cpp.o
@@ -182,7 +326,7 @@ models/RubiksCube.o: models/RubiksCube.cpp.o
 
 # target to build an object file
 models/RubiksCube.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/models/RubiksCube.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/RubiksCube.cpp.o
 .PHONY : models/RubiksCube.cpp.o
 
 models/RubiksCube.i: models/RubiksCube.cpp.i
@@ -190,7 +334,7 @@ models/RubiksCube.i: models/RubiksCube.cpp.i
 
 # target to preprocess a source file
 models/RubiksCube.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/models/RubiksCube.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/RubiksCube.cpp.i
 .PHONY : models/RubiksCube.cpp.i
 
 models/RubiksCube.s: models/RubiksCube.cpp.s
@@ -198,8 +342,32 @@ models/RubiksCube.s: models/RubiksCube.cpp.s
 
 # target to generate assembly for a file
 models/RubiksCube.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/models/RubiksCube.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/RubiksCube.cpp.s
 .PHONY : models/RubiksCube.cpp.s
+
+models/RubiksCubeBitBoard.o: models/RubiksCubeBitBoard.cpp.o
+.PHONY : models/RubiksCubeBitBoard.o
+
+# target to build an object file
+models/RubiksCubeBitBoard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/RubiksCubeBitBoard.cpp.o
+.PHONY : models/RubiksCubeBitBoard.cpp.o
+
+models/RubiksCubeBitBoard.i: models/RubiksCubeBitBoard.cpp.i
+.PHONY : models/RubiksCubeBitBoard.i
+
+# target to preprocess a source file
+models/RubiksCubeBitBoard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/RubiksCubeBitBoard.cpp.i
+.PHONY : models/RubiksCubeBitBoard.cpp.i
+
+models/RubiksCubeBitBoard.s: models/RubiksCubeBitBoard.cpp.s
+.PHONY : models/RubiksCubeBitBoard.s
+
+# target to generate assembly for a file
+models/RubiksCubeBitBoard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/models/RubiksCubeBitBoard.cpp.s
+.PHONY : models/RubiksCubeBitBoard.cpp.s
 
 # Help Target
 help:
@@ -209,16 +377,37 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Godshand"
+	@echo "... rubiks_cube_solver"
+	@echo "... PatternDatabases/CornerDatabaseMaker.o"
+	@echo "... PatternDatabases/CornerDatabaseMaker.i"
+	@echo "... PatternDatabases/CornerDatabaseMaker.s"
+	@echo "... PatternDatabases/CornerPatternDatabase.o"
+	@echo "... PatternDatabases/CornerPatternDatabase.i"
+	@echo "... PatternDatabases/CornerPatternDatabase.s"
+	@echo "... PatternDatabases/NibbleArray.o"
+	@echo "... PatternDatabases/NibbleArray.i"
+	@echo "... PatternDatabases/NibbleArray.s"
+	@echo "... PatternDatabases/PatternDatabase.o"
+	@echo "... PatternDatabases/PatternDatabase.i"
+	@echo "... PatternDatabases/PatternDatabase.s"
+	@echo "... PatternDatabases/math.o"
+	@echo "... PatternDatabases/math.i"
+	@echo "... PatternDatabases/math.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... models/1DArrayModel.o"
+	@echo "... models/1DArrayModel.i"
+	@echo "... models/1DArrayModel.s"
 	@echo "... models/3DArrayModel.o"
 	@echo "... models/3DArrayModel.i"
 	@echo "... models/3DArrayModel.s"
 	@echo "... models/RubiksCube.o"
 	@echo "... models/RubiksCube.i"
 	@echo "... models/RubiksCube.s"
+	@echo "... models/RubiksCubeBitBoard.o"
+	@echo "... models/RubiksCubeBitBoard.i"
+	@echo "... models/RubiksCubeBitBoard.s"
 .PHONY : help
 
 

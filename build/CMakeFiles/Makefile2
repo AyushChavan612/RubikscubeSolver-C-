@@ -54,16 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/f/godsHand
+CMAKE_SOURCE_DIR = /mnt/f/godshand
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/f/godsHand/build
+CMAKE_BINARY_DIR = /mnt/f/godshand/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Godshand.dir/all
+all: CMakeFiles/rubiks_cube_solver.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Godshand.dir/clean
+clean: CMakeFiles/rubiks_cube_solver.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Godshand.dir
+# Target rules for target CMakeFiles/rubiks_cube_solver.dir
 
 # All Build rule for target.
-CMakeFiles/Godshand.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/f/godsHand/build/CMakeFiles --progress-num=1,2,3,4 "Built target Godshand"
-.PHONY : CMakeFiles/Godshand.dir/all
+CMakeFiles/rubiks_cube_solver.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/f/godshand/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target rubiks_cube_solver"
+.PHONY : CMakeFiles/rubiks_cube_solver.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Godshand.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/godsHand/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Godshand.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/godsHand/build/CMakeFiles 0
-.PHONY : CMakeFiles/Godshand.dir/rule
+CMakeFiles/rubiks_cube_solver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/godshand/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rubiks_cube_solver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/f/godshand/build/CMakeFiles 0
+.PHONY : CMakeFiles/rubiks_cube_solver.dir/rule
 
 # Convenience name for target.
-Godshand: CMakeFiles/Godshand.dir/rule
-.PHONY : Godshand
+rubiks_cube_solver: CMakeFiles/rubiks_cube_solver.dir/rule
+.PHONY : rubiks_cube_solver
 
 # clean rule for target.
-CMakeFiles/Godshand.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Godshand.dir/build.make CMakeFiles/Godshand.dir/clean
-.PHONY : CMakeFiles/Godshand.dir/clean
+CMakeFiles/rubiks_cube_solver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rubiks_cube_solver.dir/build.make CMakeFiles/rubiks_cube_solver.dir/clean
+.PHONY : CMakeFiles/rubiks_cube_solver.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,18 +1,39 @@
-    cmake_minimum_required(VERSION 3.10)
-    project(Godshand)
+cmake_minimum_required(VERSION 3.20)
+project(godshand)
 
-    set(CMAKE_CXX_STANDARD 17)
-    set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 14)
 
-    # Add the executable
-    add_executable(Godshand
-        main.cpp
-        models/3DArrayModel.cpp
-        models/RubiksCube.cpp
-        solver/IDDFSSolver.h
-        solver/BFSSolver.h
-        solver/DFSSolver.h
-    )
+# Include necessary header directories
+include_directories(models)
+include_directories(PatternDatabases)
+include_directories(solver)
 
-    # Include directories for headers
-    target_include_directories(Godshand PRIVATE models solver)
+add_executable(rubiks_cube_solver
+    main.cpp
+
+    # Model Files
+    models/RubiksCube.cpp
+    models/RubiksCube.h
+    models/1DArrayModel.cpp
+    models/3DArrayModel.cpp
+    models/RubiksCubeBitBoard.cpp
+
+    # Pattern Database Files
+    PatternDatabases/NibbleArray.cpp
+    PatternDatabases/NibbleArray.h
+    PatternDatabases/PatternDatabase.cpp
+    PatternDatabases/PatternDatabase.h
+    PatternDatabases/PermutationIndexer.h
+    PatternDatabases/CornerPatternDatabase.cpp
+    PatternDatabases/CornerPatternDatabase.h
+    PatternDatabases/CornerDatabaseMaker.cpp
+    PatternDatabases/CornerDatabaseMaker.h
+    PatternDatabases/math.cpp
+    PatternDatabases/math.h
+
+    # Solver Files
+    solver/DFSSolver.h
+    solver/BFSSolver.h
+    solver/IDDFSSolver.h
+    solver/IDAStarSolver.h
+)

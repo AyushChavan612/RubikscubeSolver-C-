@@ -18,6 +18,7 @@ private:
         for (int i = 0; i < 18; i++) {
             rubiksCube.move(RubiksCube::MOVE(i));
             moves.push_back(RubiksCube::MOVE(i));
+            
             if (dfs(dep + 1)) return true;
             moves.pop_back();
             rubiksCube.invert(RubiksCube::MOVE(i));
